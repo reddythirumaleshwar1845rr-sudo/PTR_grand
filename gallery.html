@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Gallery — PTR Grand Fine Dining</title>
+  <meta name="description" content="Explore photos of PTR Grand's luxury interiors, Michelin-level dish plating, sommelier wine vaults, and behind-the-scenes kitchen craftsmanship.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="PTR Grand Home">
+        <span class="logo-main">PTR <span>GRAND</span></span>
+        <span class="logo-sub">FINE DINING</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="reservations.html" class="btn btn-gold">Reserve a Table</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="page-banner-bg">
+        <img src="./dining.jpg" alt="PTR Grand Architecture & Interior Ambiance">
+      </div>
+      <div class="container page-banner-content reveal">
+        <span class="section-label">A Visual Journey</span>
+        <h1 class="heading-lg">Architecture & Atmosphere</h1>
+        <div class="gold-divider"></div>
+        <p style="color: var(--text-muted-light); max-width: 620px; margin: 0 auto;">
+          An exclusive look into PTR Grand's exterior architecture, opulent dining halls, private suites, and sommelier vaults.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="section section-lg bg-dark">
+      <div class="container">
+
+        <!-- Category Filter Buttons -->
+        <div class="filter-container reveal" style="margin-bottom: 3rem;">
+          <button class="filter-btn active" data-filter="all">All Spaces</button>
+          <button class="filter-btn" data-filter="exterior">Exterior</button>
+          <button class="filter-btn" data-filter="interior">Interior & Dining</button>
+          <button class="filter-btn" data-filter="private">Private Dining</button>
+          <button class="filter-btn" data-filter="seating">Seating & Atmosphere</button>
+        </div>
+
+        <div class="gallery-grid">
+          
+          <!-- Image 1: Main Exterior -->
+          <div class="gallery-item reveal" data-category="exterior" data-caption="Main Exterior">
+            <img src="./exterior.jpg" alt="Main Exterior">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon">🔍</div>
+              <span class="gallery-caption">Main Exterior</span>
+            </div>
+          </div>
+
+          <!-- Image 2: Additional Exterior View -->
+          <div class="gallery-item reveal" data-category="exterior" data-caption="Additional Exterior View">
+            <img src="./exterior2.jpg" alt="Additional Exterior View">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon">🔍</div>
+              <span class="gallery-caption">Additional Exterior View</span>
+            </div>
+          </div>
+
+          <!-- Image 3: Booth Seating -->
+          <div class="gallery-item reveal" data-category="seating" data-caption="Booth Seating">
+            <img src="./booth.jpg" alt="Booth Seating">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon">🔍</div>
+              <span class="gallery-caption">Booth Seating</span>
+            </div>
+          </div>
+
+          <!-- Image 4: The Grand Hall -->
+          <div class="gallery-item reveal" data-category="interior" data-caption="The Grand Hall">
+            <img src="./dining.jpg" alt="The Grand Hall">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon">🔍</div>
+              <span class="gallery-caption">The Grand Hall</span>
+            </div>
+          </div>
+
+          <!-- Image 5: Private Dining Suite -->
+          <div class="gallery-item reveal" data-category="private" data-caption="Private Dining Suite">
+            <img src="./private_dining.jpg" alt="Private Dining Suite">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon">🔍</div>
+              <span class="gallery-caption">Private Dining Suite</span>
+            </div>
+          </div>
+
+          <!-- Image 6: Additional Interior View -->
+          <div class="gallery-item reveal" data-category="interior" data-caption="Additional Interior View">
+            <img src="./interior3.jpg" alt="Additional interior view of PTR Grand">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon">🔍</div>
+              <span class="gallery-caption">Additional Interior</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Lightbox Modal Viewer -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-label="Image Preview Modal" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close image lightbox">&times;</button>
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="logo-main">PTR <span>GRAND</span></span>
+            <span class="logo-sub">FINE DINING</span>
+          </a>
+          <p class="footer-desc">Where every moment lingers. An extraordinary destination for fine gastronomy and bespoke luxury.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-hours">
+          <h4 class="footer-heading">Service Hours</h4>
+          <p><strong>Dinner:</strong> Tue – Sun | 5:30 PM – 11:00 PM</p>
+          <p><strong>Lunch:</strong> Fri – Sun | 12:00 PM – 3:00 PM</p>
+          <p><strong>Lounge:</strong> Tue – Sun | 4:30 PM – Midnight</p>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-heading">Location</h4>
+          <p style="color:var(--text-muted-light); margin-bottom:0.5rem;">742 Grand Avenue, Suite 100<br>Metropolis, NY 10001</p>
+          <p style="color:var(--text-muted-light);"><strong>Reservations:</strong> +1 (555) 892-4010</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PTR Grand Fine Dining. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
